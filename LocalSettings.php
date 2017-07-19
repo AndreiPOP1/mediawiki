@@ -352,6 +352,10 @@ $wgGroupPermissions['sysadmin']['steward'] = true;
 $wgRevokePermissions['exampleuser']['editmyoptions'] = true;
 $wgRevokePermissions['exampleuser']['editmyprivateinfo'] = true;
 
+// Logs
+
+$wgDebugLogGroups['CirrusSearch'] = "$IP/extensions/CirrusSearch/error.log";
+
 //Autopromote sysops
 $wgAutopromoteOnce['onView']['sysop'] = array( "&",
 	array( APCOND_EDITCOUNT, 0 ),
